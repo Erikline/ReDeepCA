@@ -1,0 +1,6 @@
+RUN_ID=deepca_official_20260712_224522
+START_TIME=2026-07-12T22:45:22+08:00
+HOST=zhy-gzf
+GPU=0
+LOG_FILE=/data/linhongyu/CTA-DSA/Code/logs/train/deepca_official_20260712_224522.log
+/data/linhongyu/miniconda3/envs/MedRec/bin/python -u algorithms/deepca/train.py --data_dir data/合成配对 --save_dir outputs/train/deepca --epochs 1200 --batch_size 2 --lr 1e-4 --num_workers 2 --vol_size 128 --num_filters 64 --foreground_weight 128 --early_stop_patience 20 --save_every 10 --tensorboard
